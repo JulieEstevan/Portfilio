@@ -10,6 +10,8 @@ const HeaderWrapper = styled.header`
 const Link = styled.a`
     cursor: pointer;
     font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: black;
 `
 const ResizeLogo = styled.img`
     width: 10rem;
@@ -28,8 +30,8 @@ function Header() {
             </Link>
             <Navigation>
                 <Link>PROJETS</Link>
-                <Link>A PROPOS</Link>
-                <Link>CONTACT</Link>
+                <Link href="#about">A PROPOS</Link>
+                <Link href="#contact">CONTACT</Link>
             </Navigation>
         </HeaderWrapper>
     )

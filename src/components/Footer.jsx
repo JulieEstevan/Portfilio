@@ -7,6 +7,7 @@ const FooterWrapper = styled.footer`
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
 `
 const LinksWrapper = styled.div`
     display:flex;

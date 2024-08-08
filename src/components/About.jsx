@@ -3,7 +3,8 @@ import Competence from "./Competence"
 import ResumeIcon from "../assets/images/cv-logo-black.webp"
 
 const Section = styled.section`
-    margin: 100px 80px;
+    margin: 0 80px;
+    padding: 100px 0 200px 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -41,7 +42,7 @@ const CompetencesWrapper = styled.div`
 
 function About() {
     return(
-        <Section>
+        <Section id="about">
             <Presentation>
                 <Icon src={ResumeIcon} alt="Icon CV" />
                 <div>
