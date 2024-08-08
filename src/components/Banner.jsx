@@ -13,7 +13,7 @@ const Title = styled.div`
     gap: 20px;
 `
 const Icon = styled.img`
-    width: 5rem;
+    width: 6rem;
 `
 const Name = styled.h1`
     margin: 0 0 5px 0;

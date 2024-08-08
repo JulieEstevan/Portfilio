@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Banner from "../components/Banner"
+import About from "../components/About"
 
 const MainWrapper = styled.main`
 
@@ -8,15 +9,9 @@ function Home() {
     return(
         <MainWrapper>
             <Banner />
-            <section>
-
-            </section>
-            <section>
-
-            </section>
-            <section>
-
-            </section>
+            <section />
+            <About />
+            <section />
         </MainWrapper>
     )
 }
