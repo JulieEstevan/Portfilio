@@ -1,8 +1,9 @@
+import React from "react"
 import styled from "styled-components"
 
 const Section = styled.section`
     background-color: #f4f4f4;
-    padding: 80px 100px;
+    padding: 80px 100px 60px 100px;
 `
 const Title = styled.h2`
     margin: 0 0 20px 0;
@@ -14,7 +15,7 @@ const Description = styled.p`
     opacity: 60%;
 `
 const Form = styled.form`
-    margin-top: 50px;
+    margin: 50px 0 30px 0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -63,14 +64,42 @@ const Button = styled.button`
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     padding: 12px 25px;
 `
+const Result = styled.span`
+    font-weight: 500;
+`
 
 function Contact() {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault()
+        setResult("Envoie....")
+        const formData = new FormData(event.target)
+
+        formData.append("access_key", "ff9223e2-4e01-4cff-98ce-bf28e100f9d8")
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        })
+
+        const data = await response.json()
+
+        if (data.success) {
+            setResult("Votre message a été envoyé")
+            event.target.reset()
+        } else {
+            console.log("Error", data)
+            setResult(data.message)
+        }
+    }
+
     return(
         <Section id="contact">
             <Title>Contact</Title>
             <Description>Questions, projets, offres d'emploi ? N'hésitez pas à me contacter !</Description>
-            <Form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="ff9223e2-4e01-4cff-98ce-bf28e100f9d8" />
+            <Form onSubmit={onSubmit}>
                 <IdBox>
                     <Label for="name">NOM</Label>
                     <Input type="text" name="name" id="name" required />
@@ -85,6 +114,7 @@ function Contact() {
                 </MsgBox>
                 <Button type="submit">ENVOYER</Button>
             </Form>
+            <Result>{result}</Result>
         </Section>
     )
 }
