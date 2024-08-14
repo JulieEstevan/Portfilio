@@ -34,13 +34,13 @@ function Footer() {
         <FooterWrapper>
             <LinksWrapper>
                 <Link href="mailto:julie.s.estevan@gmail.com">
-                    <i class="fa-solid fa-square-envelope fa-2xl"></i>
+                    <i className="fa-solid fa-square-envelope fa-2xl"></i>
                 </Link>
                 <Link href="https://www.linkedin.com/in/julie-estevan/" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    <i className="fa-brands fa-linkedin fa-2xl"></i>
                 </Link>
                 <Link href="https://github.com/JulieEstevan" target="_blank">
-                    <i class="fa-brands fa-square-github fa-2xl"></i>
+                    <i className="fa-brands fa-square-github fa-2xl"></i>
                 </Link>
             </LinksWrapper>
             

@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1",
+        "name":"Kasa",
+        "description":"Créer une application web de location immobilière avec React",
+        "date":"05/2024",
+        "images":{
+            "preview":"https://i.ibb.co/1Z7PzJM/K-preview.webp",
+            "slides":[
+                "https://i.ibb.co/XS4fztv/K-slide1.webp",
+                "https://i.ibb.co/3YPFTg2/K-slide2.webp",
+                "https://i.ibb.co/cwNN2Jb/K-slide3.webp"
+            ]
+        },
+        "urls":{
+            "website":"https://kasa.netlify.app",
+            "github":"https://github.com/JulieEstevan/kasa"
+        }
+    },
+    {
+        "id":"2",
+        "name":"Sophie Bluel",
+        "description":"Créer une page web dynamique avec JavaScript",
+        "date":"03/2024",
+        "images":{
+            "preview":"https://i.ibb.co/N9Xws39/SB-preview.webp",
+            "slides":[
+                "https://i.ibb.co/W2hmQnr/SB-slide1.webp",
+                "https://i.ibb.co/tYLyWWq/SB-slide2.webp",
+                "https://i.ibb.co/ZS2NFRf/SB-slide3.webp"
+            ]
+        },
+        "urls":{
+            "website":"https://sophiebluel-portfolio.netlify.app",
+            "github":"https://github.com/JulieEstevan/Portfolio-architecte-Sophie-Bluel"
+        }
+    },
+    {
+        "id":"3",
+        "name":"OhMyFood",
+        "description":"Développer un site “mobile first”, responsive et avec des animations CSS via SASS.",
+        "date":"01/2024",
+        "images":{
+            "preview":"https://i.ibb.co/jfSJd5b/OMF-preview.webp",
+            "slides":[
+                "https://i.ibb.co/NrXf25S/OMF-slide1.webp",
+                "https://i.ibb.co/hyJNbH7/OMF-slide2.webp",
+                "https://i.ibb.co/QcC6S03/OMF-slide3.webp"
+            ]
+        },
+        "urls":{
+            "website":"https://julieestevan.github.io/OhMyFood",
+            "github":"https://github.com/JulieEstevan/OhMyFood"
+        }
+    }
+]

@@ -25,7 +25,7 @@ const Work = styled.p`
     opacity: 60%;
 `
 const Presentation = styled.p`
-    font-size: 64px;
+    font-size: 58px;
 
 `
 

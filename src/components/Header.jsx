@@ -12,6 +12,9 @@ const Link = styled.a`
     font-weight: 500;
     letter-spacing: 0.1rem;
     color: black;
+    &:hover {
+        color: rgba(0, 0, 0, 0.6);
+    }
 `
 const ResizeLogo = styled.img`
     width: 10rem;
@@ -29,7 +32,7 @@ function Header() {
                 <ResizeLogo src={Logo} alt="Logo Portfolio" />
             </Link>
             <Navigation>
-                <Link>PROJETS</Link>
+                <Link href="#projects">PROJETS</Link>
                 <Link href="#about">A PROPOS</Link>
                 <Link href="#contact">CONTACT</Link>
             </Navigation>

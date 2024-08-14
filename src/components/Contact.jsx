@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Section = styled.section`
     background-color: #f4f4f4;
     padding: 80px 100px 60px 100px;
+    border-radius: 20px;
 `
 const Title = styled.h2`
     margin: 0 0 20px 0;
@@ -40,12 +41,17 @@ const Label = styled.label`
 `
 const Input = styled.input`
     border: solid 1px #e4e4e4;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: 400;
     padding: 12px 18px;
+    &:focus {
+        outline-color: rgba(0, 0, 0, 0.3);
+    }
 `
 const Message = styled.textarea`
     border: solid 1px #e4e4e4;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: 400;
     padding: 12px 18px;
@@ -53,6 +59,9 @@ const Message = styled.textarea`
     max-height: 400px;
     max-width: 80%;
     min-width: 80%;
+    &:focus {
+        outline-color: rgba(0, 0, 0, 0.3);
+    }
 `
 const Button = styled.button`
     font-size: 12px;
@@ -61,8 +70,13 @@ const Button = styled.button`
     color: white;
     background-color: black;
     border: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
     padding: 12px 25px;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
 `
 const Result = styled.span`
     font-weight: 500;
@@ -101,15 +115,15 @@ function Contact() {
             <Description>Questions, projets, offres d'emploi ? N'hésitez pas à me contacter !</Description>
             <Form onSubmit={onSubmit}>
                 <IdBox>
-                    <Label for="name">NOM</Label>
+                    <Label htmlFor="name">NOM</Label>
                     <Input type="text" name="name" id="name" required />
                 </IdBox>
                 <IdBox>
-                    <Label for="email">EMAIL</Label>
+                    <Label htmlFor="email">EMAIL</Label>
                     <Input type="email" name="email" id="email" required />
                 </IdBox>
                 <MsgBox>
-                    <Label for="message">MESSAGE</Label>
+                    <Label htmlFor="message">MESSAGE</Label>
                     <Message name="message" id="message" placeholder="Ecrivez votre message" required />
                 </MsgBox>
                 <Button type="submit">ENVOYER</Button>
