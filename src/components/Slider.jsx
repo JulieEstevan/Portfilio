@@ -3,12 +3,15 @@ import styled from "styled-components"
 
 const SliderBox = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: relative;
     border-radius: 25px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
-    margin: 20px 50px;
+    margin-bottom: 20px;
+    @media (max-width: 599px) {
+        display: none;
+    }
 `
 const Paging = styled.div`
     position: absolute;
@@ -22,6 +25,11 @@ const Arrow = styled.button`
     border: none;
     background-color: inherit;
     margin: 10px;
+`
+const ArrowIcon = styled.i`
+    @media (max-width: 759px) {
+        font-size: 16px;
+    }
 `
 const Image = styled.img`
     width: 85%;
@@ -40,12 +48,12 @@ function Slider({ project }) {
     return(
         <SliderBox>
             <Arrow onClick={prevSlide}>
-                <i className="fa-solid fa-chevron-left fa-xl"></i>
+                <ArrowIcon className="fa-solid fa-chevron-left fa-xl"></ArrowIcon>
             </Arrow>
             <Image src={project.images.slides[currentSlide]} alt="logement" />
             <Paging>{paging}</Paging>
             <Arrow onClick={nextSlide}>
-                <i className="fa-solid fa-chevron-right fa-xl"></i>
+                <ArrowIcon className="fa-solid fa-chevron-right fa-xl"></ArrowIcon>
             </Arrow>
         </SliderBox>
     )

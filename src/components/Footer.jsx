@@ -7,12 +7,26 @@ const FooterWrapper = styled.footer`
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    margin: 30px 0 20px;
+    @media (max-width: 1059px) {
+        font-size: 14px;
+        gap: 0px;
+    }
+    @media (max-width: 479px) {
+        margin: 10px 0;
+        font-size: 12px;
+    }
 `
 const LinksWrapper = styled.div`
     display:flex;
     gap: 30px;
     height: 30px;
+    @media (max-width: 1059px) {
+        gap: 20px;
+    }
+    @media (max-width: 479px) {
+        gap: 10px;
+    }
 `
 const Link = styled.a`
     display: flex;
@@ -20,6 +34,10 @@ const Link = styled.a`
     align-items: center;
     padding: 5px;
     gap: 5px;
+    @media (max-width: 479px) {
+        padding: 0 2px;
+        gap: 0;
+    }
 `
 const Description = styled.div`
     display: flex;
@@ -27,6 +45,9 @@ const Description = styled.div`
 `
 const LogoSize = styled.img`
     width: 2rem;
+    @media (max-width: 479px) {
+        width: 1.5rem;
+    }
 `
 
 function Footer() {

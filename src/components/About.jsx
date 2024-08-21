@@ -8,6 +8,20 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @media (max-width: 1059px) {
+        margin: 0 60px;
+        padding: 60px 0 80px 0;
+        gap: 30px;
+    }
+    @media (max-width: 759px) {
+        margin: 0 40px;
+        padding: 40px 0 60px 0;
+    }
+    @media (max-width: 479px) {
+        margin: 0 20px;
+        padding: 20px 0px;
+        gap: 20px;
+    }
 `
 const Presentation = styled.div`
     display: flex;
@@ -16,28 +30,69 @@ const Presentation = styled.div`
 `
 const Icon = styled.img`
     width: 6rem;
+    @media (max-width: 1059px) {
+        width: 4rem;
+    }
+    @media (max-width: 759px) {
+        display: none;
+    }
 `
 const TitleResume = styled.h2`
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
     font-size: 36px;
     font-weight: 400;
+    @media (max-width: 1249px) {
+        font-size: 30px;
+    };
+    @media (max-width: 1059px) {
+        font-size: 26px;
+    };
+    @media (max-width: 599px) {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 `
 const Text = styled.p`
     font-size: 18px;
     opacity: 60%;
     line-height: 1.5;
+    @media (max-width: 1249px) {
+        font-size: 16px;
+    };
+    @media (max-width: 1059px) {
+        font-size: 14px;
+    };
+    @media (max-width: 599px) {
+        font-size: 12px;
+        text-align: justify;
+    }
 `
 const Title = styled.h3`
     margin: 0 0 5px 0;
     font-size: 30px;
     font-weight: 300;
     text-align: center;
+    @media (max-width: 1249px) {
+        font-size: 26px;
+    };
+    @media (max-width: 1059px) {
+        font-size: 24px;
+    };
+    @media (max-width: 599px) {
+        font-size: 18px;
+    }
 `
 const CompetencesWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    @media (max-width: 1059px) {
+        gap: 30px;
+    };
+    @media (max-width: 599px) {
+        gap: 15px;
+    }
 `
 
 function About() {

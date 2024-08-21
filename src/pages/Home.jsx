@@ -15,6 +15,9 @@ const Section = styled.section`
     background-color: #f4f4f4;
     border-radius: 20px;
     padding: 40px;
+    @media (max-width: 479px) {
+        padding: 20px;
+    }
 `
 
 function Home() {

@@ -6,6 +6,17 @@ const HeaderWrapper = styled.header`
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
+    @media (max-width: 1059px) {
+        font-size: 14px;
+    }
+    @media (max-width: 759px) {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    @media (max-width: 479px) {
+        margin: 10px 0;
+        font-size: 10px;
+    }
 `
 const Link = styled.a`
     cursor: pointer;
@@ -18,11 +29,23 @@ const Link = styled.a`
 `
 const ResizeLogo = styled.img`
     width: 10rem;
+    @media (max-width: 1059px) {
+        width: 8rem;
+    }
+    @media (max-width: 479px) {
+        width: 6rem;
+    }
 `
 
 const Navigation = styled.nav`
     display: flex;
     gap: 50px;
+    @media (max-width: 759px) {
+        gap: 20px;
+    }
+    @media (max-width: 479px) {
+        gap: 10px;
+    }
 `
 
 function Header() {

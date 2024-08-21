@@ -4,6 +4,12 @@ body {
   font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @media (max-width: 879px) {
+    margin: 0 40px;
+  };
+  @media (max-width: 759px) {
+    margin: 0 20px;
+  };
 }
 
 a {

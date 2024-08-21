@@ -21,16 +21,33 @@ const Title = styled.h3`
     font-size: 30px;
     font-weight: 500;
     margin: 10px 0 30px 0;
+    @media (max-width: 759px) {
+        font-size: 26px;
+    }
+    @media (max-width: 599px) {
+        font-size: 20px;
+    }
 `
 const Text = styled.p`
     margin: 10px 50px;
     font-size: 18px;
+    @media (max-width: 759px) {
+        margin: 10px;
+        font-size: 16px;
+    }
+    @media (max-width: 599px) {
+        font-size: 14px;
+    }
 `
 const LinkBox = styled.div`
     display: flex;
     justify-content: center;
     gap: 50px;
     margin: 30px 0 10px 0;
+    @media (max-width: 759px) {
+        gap: 30px;
+        margin: 20px 0 0px 0;
+    }
 `
 const Link = styled.a`
     cursor: pointer;
@@ -41,6 +58,9 @@ const Link = styled.a`
     &:hover {
         background-color: rgba(0, 0, 0, 0.9);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    @media (max-width: 759px) {
+        font-size: 14px;
     }
 `
 

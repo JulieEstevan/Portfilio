@@ -6,6 +6,17 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (max-width: 1059px) {
+        margin: 60px;
+    }
+    @media (max-width: 759px) {
+        margin: 40px;
+        gap: 20px;
+    }
+    @media (max-width: 479px) {
+        margin: 20px;
+        gap: 10px;
+    }
 `
 const Title = styled.div`
     display: flex;
@@ -14,19 +25,48 @@ const Title = styled.div`
 `
 const Icon = styled.img`
     width: 6rem;
+    @media (max-width: 1059px) {
+        width: 4rem;
+    };
 `
 const Name = styled.h1`
     margin: 0 0 5px 0;
     font-size: 24px;
     font-weight: 400;
+    @media (max-width: 1059px) {
+        font-size: 20px;
+    };
+    @media (max-width: 599px) {
+        font-size: 16px;
+    }
 `
 const Work = styled.p`
     font-size: 16px;
     opacity: 60%;
+    @media (max-width: 1059px) {
+        font-size: 14px;
+    };
+    @media (max-width: 599px) {
+        font-size: 12px;
+    }
 `
 const Presentation = styled.p`
     font-size: 58px;
-
+    @media (max-width: 1279px) {
+        font-size: 38px;
+    };
+    @media (max-width: 1059px) {
+        font-size: 30px;
+    };
+    @media (max-width: 759px) {
+        font-size: 26px
+    }
+    @media (max-width: 599px) {
+        font-size: 22px;
+    }
+    @media (max-width: 479px) {
+        font-size: 18px;
+    }
 `
 
 function Banner() {
